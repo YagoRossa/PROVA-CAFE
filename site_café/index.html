@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Site - Café</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-dark px-0">
+            <div class="row gx-0">
+                <div class="col-lg-3 bg-dark d-none d-lg-block">
+                    <a href="index.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center"> 
+                        <div style="padding: 10px;">
+                            <img class="img-fluid rounded-circle" src="img/coffee.png" alt="" style="width: 150px; height: 150px;" />
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-9">
+                    <div class="row gx-0 bg-white d-none d-lg-flex">
+                    </div>
+                    <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
+                        <a href="index.html" class="navbar-brand d-block d-lg-none">
+                            <h1 class="m-0 text-primary text-uppercase">Hotelier</h1>
+                        </a>
+                        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"> <!--Esse elemento "button" com a classe "navbar-toggler" é responsável por acionar a ação de expansão ou contração de um menu de navegação, identificado pelo seletor "#navbarCollapse", quando clicado.-->
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div class="navbar-nav mr-auto py-0">
+                                <a href="index.html" class="nav-item nav-link active menu-link">Home</a> 
+                                <a href="about.html" class="nav-item nav-link menu-link">informações</a>
+                                <a href="service.html" class="nav-item nav-link menu-link">Contato</a>
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">...</a> <!--Esse elemento âncora, com o atributo "href" definido como "#" e as classes "nav-link dropdown-toggle" e o atributo "data-bs-toggle" definido como "dropdown", representa um link que aciona um menu suspenso ("dropdown") ao ser clicado-->
+                                    <div class="dropdown-menu rounded-0 m-0">
+                                        <a href="booking.html" class="dropdown-item">?</a>
+                                        <a href="team.html" class="dropdown-item">?</a>
+                                        <a href="testimonial.html" class="dropdown-item">?</a>
+                                    </div>
+                                </div>
+                            </div>
+                          
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+        <!--Carousel Start-->
+        <div class="container-fluid p-0 mb-5">
+            <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="w-100" src="img/introoo.jpg" alt="Image">
+                        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                            
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w-100" src="img/introoo.jpg" alt="Image">
+                        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">  <!--Esse elemento "div" com a classe "carousel-caption d-flex flex-column align-items-center justify-content-center" representa uma legenda de um carousel ou carrossel de imagens, que é exibida sobre as imagens do carrossel. A legenda é estilizada como uma coluna flexível que centraliza verticalmente e horizontalmente seu conteúdo, permitindo a exibição de informações ou elementos adicionais relacionados às imagens do carrossel.-->
+                            
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev"> <!--Esse botão com a classe "carousel-control-prev" é usado como um controle de retrocesso para um carousel ou um carrossel de imagens. Ao ser clicado, ele irá direcionar o carrossel para o slide anterior, utilizando o seletor "#header-carousel" como alvo e a direção de slide definida como "prev".-->
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next"> <!--Esse botão com a classe "carousel-control-next" é usado como um controle de avanço para um carousel ou um carrossel de imagens. Ao ser clicado, ele irá direcionar o carrossel para o próximo slide, utilizando o seletor "#header-carousel" como alvo e a direção de slide definida como "next".-->
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+            </div>
+        </div>
+        <!-- Carousel End -->
+      
+       
+        <!--Room Start-->
+        <div class="countainer-xxl py-5">
+            <div class="container">
+               
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="room-item shadow rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img src="img/bgg.jpg" class="img-fluid">
+                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white">$100/Nigh</small>
+                            </div>
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0">Junior Suite</h5>
+                                    <div class="ps-2">
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3 Bed</small>
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-wifi text-primary me-2"></i>wifi</small>
+                                </div>
+                                <p class="text-body mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, ducimus! Animi recusandae illo ducimus voluptates hic, ex et id ab?</p>
+                                <div class="d-flex justify-content-between">
+                                    <a class="btn btn-sm btn-primary rounded py-2 px-">View Details</a>
+                                    <a class="btn btn-sm btn-dark rounded py-2 px-4">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="room-item shadow rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img src="img/room-2.jpg" class="img-fluid">
+                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white">$230/Nigh</small> <!--Esse elemento "small", com as classes "position-absolute start-0 top-100 translate-middle-y bg-primary text-white", exibe o texto "$230/Nigh" em um estilo de destaque, com um fundo laranja e texto branco, posicionado de forma absoluta no canto superior esquerdo, indicando o preço de $230 por noite.-->
+                            </div>
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0">Executive Suite</h5>
+                                    <div class="ps-2">
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>5 Bed</small> <!--Esse elemento "small", com a classe "border-end me-3 pe-3", exibe um ícone de cama na cor primária seguido pelo texto "5 Bed", indicando que há 5 camas disponíveis.-->
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>3 Bath</small>
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-wifi text-primary me-2"></i>wifi</small>
+                                </div>
+                                <p class="text-body mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, ducimus! Animi recusandae illo ducimus voluptates hic, ex et id ab?</p>
+                                <div class="d-flex justify-content-between">
+                                    <a class="btn btn-sm btn-primary rounded py-2 px-">View Details</a> <!--Esse elemento âncora, com as classes "btn", "btn-sm", "btn-primary", "rounded", "py-2" e "px-", exibe um botão pequeno com fundo laranja e cantos arredondados, mas não possui texto visível.-->
+                                    <a class="btn btn-sm btn-dark rounded py-2 px-4">Book Now</a> <!--Esse elemento âncora, com as classes "btn", "btn-sm", "btn-dark", "rounded", "py-2" e "px-4", exibe um botão pequeno com fundo escuro, cantos arredondados e o texto "Book Now" visível.-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="room-item shadow rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img src="img/room-3.jpg" class="img-fluid">
+                                <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white">$350/Nigh</small>
+                            </div>
+                            <div class="p-4 mt-2">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <h5 class="mb-0">Super Deluxe</h5>
+                                    <div class="ps-2">
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                        <small class="fa fa-star text-primary"></small>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>6 Bed</small>
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>4 Bath</small>
+                                    <small class="border-end me-3 pe-3"><i class="fa fa-wifi text-primary me-2"></i>wifi</small>
+                                </div>
+                                <p class="text-body mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, ducimus! Animi recusandae illo ducimus voluptates hic, ex et id ab?</p>
+                                <div class="d-flex justify-content-between">
+                                    <a class="btn btn-sm btn-primary rounded py-2 px-">View Details</a>
+                                    <a class="btn btn-sm btn-dark rounded py-2 px-4">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Room End-->
+
+     
+      
+      
+       
+        <!-- Começo Rodapé -->
+        <div class="container-fluid bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s">
+            <div class="container pb-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-4">
+
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12">
+                       
+                    </div>
+
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Coffee Web</a>, All Right Reserved. 
+							
+							Designed By <a class="border-bottom" href="">Yago Kauã Rossa Rocha</a>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Home</a>
+                                <a href="">Cookies</a>
+                                <a href="">Help</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fim Rodapé -->
+
+        <!--Back to Top-->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a> <!--Cria um botão do tipo primary com funcão de subir para o topo da página -->
+
+    </div>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
